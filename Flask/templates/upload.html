@@ -1,0 +1,43 @@
+<!doctype html>
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+
+    <hr>
+
+    <title>Upload new File</title>
+
+
+    <form action="" method=post enctype=multipart/form-data>
+    <select name=adnet value="Select method">
+        <option value="allAdNet">AllAdNet</option>
+        <option value="admob">Admob</option>
+        <option value="flurry">Flurry</option>
+        <option value="inmobi">InMobi</option>
+        <option value="tapjoy">TapJoy</option>
+        <option value="mobcli">MobClix</option>
+        <option value="chartboost">ChartBoost</option>
+        <option value="adwhirl">AdWhirl</option>
+        <option value="flury">MoPub</option>
+        <option value="greystripe">GreyStripe</option>
+
+    </select>
+
+    <select name=method value="Select method">
+        <option value="locInject">Location Injection</option>
+        <option value="adReplRem">Replace & Remove Html injection</option>
+        <option value="adInject">WebView Document Injection</option>        
+        <option value="adRequest">Replace WebView </option>
+    </select>
+    <h2>Upload Apk File</h2>
+      <p><input type=file name=somefile>
+         <input type=submit value=Upload>
+    </form>
+
+
+
+{% endblock %}
+
